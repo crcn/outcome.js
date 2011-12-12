@@ -42,7 +42,7 @@ fs.stat(outcome({
 }));
 ```
 
-By default, any unhandled error is thrown. TO get around this, you'll need to listen for an `unhandledError`:
+By default, any unhandled error is thrown. To get around this, you'll need to listen for an `unhandledError`:
 
 ```javascript
 outcome.on('unhandledError', function() {
@@ -82,12 +82,6 @@ outcome.on('unhandledError', function() {
 	//DO STUFF
 });
 
-//or
-
-outcome.call(fs.stat).on({
-	error: function() {},
-	result: function() {}
-})
 ```
 
 ### CallChain .listen(EventEmitter)
@@ -106,6 +100,8 @@ Disposes current call chain (listeners)
 
 ## CallChain API
 
+Same as as above 
+
 ### CallChain .on(typeOrEvents[, callback])
 
 Listens for results - `error`, and `result` primarily.
@@ -119,3 +115,11 @@ outcome.call(fs.stat).on('error', function() {
 }).on('result', function() {
 	
 });
+
+//or 
+
+outcome.call(fs.stat).on({
+	error: function() {},
+	result: function() {}
+})
+```
