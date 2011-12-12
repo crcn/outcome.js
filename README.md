@@ -56,7 +56,7 @@ fs.stat(outcome({
 ```
 
 
-### CallChain .call(fn[, target])
+### CallChain .call(fn[, target][, events])
 
 Calls the given function
 
@@ -64,10 +64,16 @@ Calls the given function
 - `target` - target scope - for `this`
 
 ```javascript
-outcome.call(fs.stat, fs).on({
+outcome.call(fs.stat, null, fs).on({
 	error: function() { },
 	result: function() { }
 });
+
+//or
+outcome.call(fs.stat, fs, {
+	error: function() { },
+	result: function() { }
+})
 ```
 
 ### CallChain .on(typeOrEvents[, callback])
@@ -81,16 +87,45 @@ Listens for any events emitted by outcome - primarily `unhandledError`
 outcome.on('unhandledError', function() {
 	//DO STUFF
 });
-
 ```
 
-### CallChain .listen(EventEmitter)
+### CallChain .listen(EventEmitter[, events])
 
 Listens to the given event emitter.
 
 ```javascript
-outcome.call(em).on({
+outcome.listen(em).on({
 	someEvent: function(){}
+});
+
+//or
+
+outcome.listen(em, {
+	someEvent: function(){}
+});
+```
+
+### CallChain .emit(EventEmitter)
+
+Pipes events to target event emitter
+
+```javascript
+outcome.call(fs.stat).emit(em);
+```
+
+### CallChain .next()
+
+Calls the next function after call - returns a new chain (flow-control).
+
+```javascript
+outcome.call(fs.stat, {
+	result: function() {
+		
+	}
+}).next(fs.readFile, {
+	result: function() {
+		
+	}
 });
 ```
 
