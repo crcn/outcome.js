@@ -7,7 +7,7 @@ var fs = require('fs');
 fs.stat('some/file.js', function(err, result) {
 	
 	if(err) {
-		//do stuff
+		//do stuff, or throw
 		return;
 	}
 
