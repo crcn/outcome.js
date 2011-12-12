@@ -14,7 +14,7 @@ fs.stat('some/file.js', function(err, result) {
 
 	//do success stuff
 });
-
+```
 
 ## Outcome API
 
