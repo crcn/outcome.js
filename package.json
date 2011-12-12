@@ -1,0 +1,14 @@
+{
+  "name": "outcome",
+  "description": "Better Result Handling",
+  "version": "0.0.1",
+  "repository": {
+  },
+  "engines": {
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "main":"./lib/index.js"
+}
