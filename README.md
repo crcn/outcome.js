@@ -40,6 +40,7 @@ fs.stat(outcome({
 		
 	}
 }));
+```
 
 By default, any unhandled error is thrown. TO get around this, you'll need to listen for an `unhandledError`:
 
