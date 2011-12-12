@@ -45,8 +45,8 @@ fs.stat(outcome({
 By default, any unhandled errors are thrown. To get around this, you'll need to listen for an `unhandledError`:
 
 ```javascript
-outcome.on('unhandledError', function() {
-	//report bugs here...
+outcome.on('unhandledError', function(error) {
+	//report bugs here..., then throw again.
 });
 
 
