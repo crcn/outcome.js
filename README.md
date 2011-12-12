@@ -35,7 +35,7 @@ Throws an exception.
 var outcome = require('outcome');
 
 fs.stat(outcome({
-	error: result.throwError,
+	error: outcome.throw,
 	result: function(arg) {
 		
 	}
