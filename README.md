@@ -42,7 +42,7 @@ fs.stat(outcome({
 }));
 ```
 
-By default, any unhandled error is thrown. To get around this, you'll need to listen for an `unhandledError`:
+By default, any unhandled errors are thrown. To get around this, you'll need to listen for an `unhandledError`:
 
 ```javascript
 outcome.on('unhandledError', function() {
