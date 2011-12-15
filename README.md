@@ -18,14 +18,40 @@ fs.stat('some/file.js', function(err, result) {
 
 ## Outcome API
 
-### Function .outcome(callbacks)
+
+There are two ways you can use outcome.js:
 
 ```javascript
-fs.stat(outcome({
-	error: function(){},
-	result: function(){}
-}));
+
+
+var onOutcome = outcome().result(function() {
+	
+	console.log('result');
+
+}).error(function() {
+	
+	console.log('error');	
+});
+
+
+fs.stat(__filename, onOutcome);
 ````
+
+Or
+
+```javascript
+
+outcome.call(fs.stat, __filename).result(function() {
+
+	console.log("RESULT");
+
+}).error(function() {
+	
+	console.log("ERROR");
+	
+})
+
+```
 
 ### .throw(error)
 
@@ -114,25 +140,35 @@ Pipes events to target event emitter
 outcome.call(fs.stat).emit(em);
 ```
 
-### CallChain .next()
+### CallChain .done()
 
-Calls the next function after call - returns a new chain (flow-control).
+Called when on error/result:
 
 ```javascript
 outcome.call(fs.stat, {
 	result: function() {
 		
 	}
-}).next(fs.readFile, {
-	result: function() {
-		
-	}
+}).done(function(err, result) {
+	
 });
 ```
 
-### CallChain .dispose()
+### CallChain .result(fn)
 
-Disposes current call chain (listeners)
+Called on success/result
+
+outcome.call(fs.stat).result(function(result) {
+	
+});
+
+### CallChain .error(fn)
+
+Called on error
+
+outcome.call(fs.stat).error(function(err) {
+	//handle error
+});
 
 ## CallChain API
 

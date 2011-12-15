@@ -8,6 +8,8 @@
   "engines": {
   },
   "dependencies": {
+    "tq":"<=0.1.0",
+    "Structr":"*"
   },
   "devDependencies": {
   },
