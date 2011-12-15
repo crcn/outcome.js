@@ -83,7 +83,7 @@ fs.stat(outcome({
 ```
 
 
-### CallChain .call(fn[, target][, events])
+### CallChain .call(fn[, arg1][, arg2][, ...])
 
 Calls the given function
 
