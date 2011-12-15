@@ -48,7 +48,7 @@ outcome.call(fs.stat, __filename).result(function() {
 }).error(function() {
 	
 	console.log("ERROR");
-	
+
 })
 
 ```
@@ -158,17 +158,21 @@ outcome.call(fs.stat, {
 
 Called on success/result
 
+```javascript
 outcome.call(fs.stat).result(function(result) {
 	
 });
+```
 
 ### CallChain .error(fn)
 
 Called on error
 
+```javascript
 outcome.call(fs.stat).error(function(err) {
 	//handle error
 });
+```
 
 ## CallChain API
 
