@@ -53,21 +53,34 @@ outcome.call(fs.stat, __filename).result(function() {
 
 ```
 
-### .throw(error)
+### .outcome([listenersOrEm])
 
-Throws an exception. 
+- `listenersOrEm` - listeners or eventEmitter
 
 ```javascript
-var outcome = require('outcome');
+var em = new EventEmitter();
 
-fs.stat(outcome({
-	error: outcome.throw,
-	result: function(arg) {
-		
-	}
-}));
+em.on('result', function() {
+	console.log("RESULT");
+});
+
+fs.stat(__filename, outcome(em));
 ```
 
+Or
+
+```javascript
+var onOutcome = outcome({
+	result: function() {
+		console.log("RESULT");
+	},
+	error: function() {
+		console.log("ERROR");
+	}
+});
+
+fs.stat(__filename, onOutcome);
+```
 
 By default, any unhandled errors are thrown. To get around this, you'll need to listen for an `unhandledError`:
 
