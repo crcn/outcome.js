@@ -19,53 +19,34 @@ fs.stat('some/file.js', function(err, result) {
 ## Outcome API
 
 
-There are two ways you can use outcome.js:
+### .outcome(listeners)
+
+- `listeners` - result, or error
 
 ```javascript
 
 
-var onOutcome = outcome().result(function() {
-	
-	console.log('result');
-
-}).error(function() {
-	
-	console.log('error');	
+var resultHandler = outcome.error(function(err) {
+	console.log(err);
 });
 
+//success
+fs.stat(__filename, resultHandler.result(function(result) {
+	//do stuff
+}));
 
-fs.stat(__filename, onOutcome);
+//success
+fs.stat(__filename, resultHandler.result(function(result) {
+	//do stuff
+})); 
+
+//this fails - error is passed to above func
+fs.stat('s'+__filename, resultHandler.result(function(result) {
+	//do stuff
+})); 
+
+
 ````
-
-Or
-
-```javascript
-
-outcome.call(fs.stat, __filename).result(function() {
-
-	console.log("RESULT");
-
-}).error(function() {
-	
-	console.log("ERROR");
-
-})
-
-```
-
-### .outcome([listenersOrEm])
-
-- `listenersOrEm` - listeners or eventEmitter
-
-```javascript
-var em = new EventEmitter();
-
-em.on('result', function() {
-	console.log("RESULT");
-});
-
-fs.stat(__filename, outcome(em));
-```
 
 Or
 
@@ -80,7 +61,9 @@ var onOutcome = outcome({
 });
 
 fs.stat(__filename, onOutcome);
+
 ```
+
 
 By default, any unhandled errors are thrown. To get around this, you'll need to listen for an `unhandledError`:
 
@@ -96,78 +79,17 @@ fs.stat(outcome({
 ```
 
 
-### CallChain .call(fn[, arg1][, arg2][, ...])
 
-Calls the given function
 
-- `fn` - target function to be called
-- `target` - target scope - for `this`
 
-```javascript
-outcome.call(fs.stat, null, fs).on({
-	error: function() { },
-	result: function() { }
-});
+## CallChain API
 
-//or
-outcome.call(fs.stat, fs, {
-	error: function() { },
-	result: function() { }
-})
-```
+### .done()
 
-### CallChain .on(typeOrEvents[, callback])
+Called when on error/result. `Same as function(err, result) { }`
 
-Listens for any events emitted by outcome - primarily `unhandledError`
 
-- `typeOrEvent` - type of event (string), or object of events
-- `callback` - callback for the listener
-
-```javascript
-outcome.on('unhandledError', function() {
-	//DO STUFF
-});
-```
-
-### CallChain .listen(EventEmitter[, events])
-
-Listens to the given event emitter.
-
-```javascript
-outcome.listen(em).on({
-	someEvent: function(){}
-});
-
-//or
-
-outcome.listen(em, {
-	someEvent: function(){}
-});
-```
-
-### CallChain .emit(EventEmitter)
-
-Pipes events to target event emitter
-
-```javascript
-outcome.call(fs.stat).emit(em);
-```
-
-### CallChain .done()
-
-Called when on error/result:
-
-```javascript
-outcome.call(fs.stat, {
-	result: function() {
-		
-	}
-}).done(function(err, result) {
-	
-});
-```
-
-### CallChain .result(fn)
+### .result(fn)
 
 Called on success/result
 
@@ -177,7 +99,7 @@ outcome.call(fs.stat).result(function(result) {
 });
 ```
 
-### CallChain .error(fn)
+### .error(fn)
 
 Called on error
 
@@ -185,30 +107,4 @@ Called on error
 outcome.call(fs.stat).error(function(err) {
 	//handle error
 });
-```
-
-## CallChain API
-
-Same as as above 
-
-### CallChain .on(typeOrEvents[, callback])
-
-Listens for results - `error`, and `result` primarily.
-
-- `typeOrEvent` - type of event (string), or object of events
-- `callback` - callback for the listener
-
-```javascript
-outcome.call(fs.stat).on('error', function() {
-	
-}).on('result', function() {
-	
-});
-
-//or 
-
-outcome.call(fs.stat).on({
-	error: function() {},
-	result: function() {}
-})
 ```

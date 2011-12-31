@@ -1,17 +1,13 @@
 {
-  "name": "outcome",
-  "description": "Better Result Handling",
-
-  "version": "0.0.1",
-  "repository": {
-  },
-  "engines": {
-  },
-  "dependencies": {
-    "tq":"<=0.1.0",
-    "Structr":"*"
-  },
-  "devDependencies": {
-  },
-  "main":"./lib/index.js"
+    "name": "outcome",
+    "description": "Better Result Handling",
+    "version": "0.0.3",
+    "repository": {},
+    "engines": {},
+    "dependencies": {
+        "tq": "<=0.1.0",
+        "underscore": "*"
+    },
+    "devDependencies": {},
+    "main": "./lib/index.js"
 }

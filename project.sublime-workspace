@@ -35,7 +35,15 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 3219,
+				"buffer_size": 3240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin b284jE.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -137,6 +145,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"onOutcome2",
 			"wrapResultFn",
 			"call",
 			"listen",
@@ -280,15 +289,15 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 3219,
+						"buffer_size": 3240,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1313,
-								1313
+								2734,
+								2734
 							]
 						],
 						"settings":
@@ -297,13 +306,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 906.0,
+						"translation.y": 2508.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "/tmp/subl stdin b284jE.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "/Users/craig/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
 					"settings":
 					{
@@ -329,7 +364,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "package.json",
 					"settings":
 					{
@@ -357,7 +392,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "examples/fs-test.js",
 					"settings":
 					{
@@ -368,8 +403,8 @@
 						"selection":
 						[
 							[
-								181,
-								181
+								291,
+								189
 							]
 						],
 						"settings":
