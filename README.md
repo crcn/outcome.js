@@ -78,25 +78,41 @@ fs.stat(outcome({
 }));
 ```
 
+### .copy()
+
+Copies the current call chain. Useful for using one error handler, and many result handlers.
+
+```javascript
 
 
-
-
-## CallChain API
+```
 
 ### .done()
 
 Called when on error/result. `Same as function(err, result) { }`
 
+```javascript
+
+fs.stat(__filename, outcome.error(function(err) {
+	//handle error
+}).result(function(result) {
+	//handle result
+}.done(function(err, result) {
+	//called on fn complete
+});
+
+```
 
 ### .result(fn)
 
 Called on success/result
 
 ```javascript
-outcome.call(fs.stat).result(function(result) {
+var onOutcome = outcome.result(function(result) {
 	
 });
+
+onOutcome(null, "result!");
 ```
 
 ### .error(fn)
@@ -104,7 +120,10 @@ outcome.call(fs.stat).result(function(result) {
 Called on error
 
 ```javascript
-outcome.call(fs.stat).error(function(err) {
-	//handle error
+
+var onOutcome = outcome.error(function(result) {
+	
 });
+
+onOutcome(new Error("ERR"));
 ```
