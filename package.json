@@ -5,7 +5,6 @@
     "repository": {},
     "engines": {},
     "dependencies": {
-        "tq": "<=0.1.0",
         "underscore": "*"
     },
     "devDependencies": {},
