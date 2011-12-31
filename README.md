@@ -4,7 +4,7 @@
 ```javascript
 var fs = require('fs');
 
-fs.stat('some/file.js', function(err, result) {
+fs.stat('some/file.js', function(err, data) {
 	
 	if(err) {
 		//do stuff, or throw
@@ -21,7 +21,7 @@ fs.stat('some/file.js', function(err, result) {
 
 ### .outcome(listeners)
 
-- `listeners` - result, or error
+- `listeners` - success, or error
 
 ```javascript
 
@@ -31,17 +31,17 @@ var resultHandler = outcome.error(function(err) {
 });
 
 //success
-fs.stat(__filename, resultHandler.copy().result(function(result) {
+fs.stat(__filename, resultHandler.copy().success(function(data) {
 	//do stuff
 }));
 
 //success
-fs.stat(__filename, resultHandler.copy().result(function(result) {
+fs.stat(__filename, resultHandler.copy().success(function(data) {
 	//do stuff
 })); 
 
 //this fails - error is passed to above func
-fs.stat('s'+__filename, resultHandler.copy().result(function(result) {
+fs.stat('s'+__filename, resultHandler.copy().success(function(data) {
 	//do stuff
 })); 
 
@@ -52,8 +52,8 @@ Or
 
 ```javascript
 var onOutcome = outcome({
-	result: function() {
-		console.log("RESULT");
+	success: function() {
+		console.log("SUCCESS");
 	},
 	error: function() {
 		console.log("ERROR");
@@ -73,29 +73,25 @@ outcome.on('unhandledError', function(error) {
 });
 
 
-fs.stat(outcome({
-	result: function(){}
+//fails
+fs.stat('s'+__filename, outcome({
+	success: function(){}
 }));
 ```
 
 ### .copy()
 
-Copies the current call chain. Useful for using one error handler, and many result handlers.
-
-```javascript
-
-
-```
+Copies the current call chain. Useful for using one error handler, and many result handlers. See first example.
 
 ### .done()
 
-Called when on error/result. `Same as function(err, result) { }`
+Called when on error/success. `Same as function(err, data) { }`
 
 ```javascript
 
 fs.stat(__filename, outcome.error(function(err) {
 	//handle error
-}).result(function(result) {
+}).success(function(data) {
 	//handle result
 }.done(function(err, result) {
 	//called on fn complete
@@ -103,16 +99,16 @@ fs.stat(__filename, outcome.error(function(err) {
 
 ```
 
-### .result(fn)
+### .success(fn)
 
-Called on success/result
+Called on success
 
 ```javascript
-var onOutcome = outcome.result(function(result) {
+var onOutcome = outcome.success(function(data) {
 	
 });
 
-onOutcome(null, "result!");
+onOutcome(null, "success!");
 ```
 
 ### .error(fn)
@@ -121,9 +117,24 @@ Called on error
 
 ```javascript
 
-var onOutcome = outcome.error(function(result) {
+var onOutcome = outcome.error(function(err) {
 	
 });
 
 onOutcome(new Error("ERR"));
 ```
+
+### .handle(fn)
+
+Custom response handler
+
+```javascript
+
+outcome.handle(function(response) {
+	
+	if(response.errors) this.error(response);
+	if(response.data) this.success(response);
+});
+
+```
+

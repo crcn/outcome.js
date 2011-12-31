@@ -5,13 +5,13 @@ EventEmitter = require('events').EventEmitter;
 
 var onResult = outcome.error(function(err) {
 	console.log(err);
-}).result(function(result) {
+}).success(function(result) {
 	console.log(result)
 });
 
 
 
-var onResult2 = onResult.copy().result(function(result) {
+var onResult2 = onResult.copy().success(function(result) {
 	
 	console.log("RESULT")
 }).done(function(err, result) {
