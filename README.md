@@ -31,17 +31,17 @@ var resultHandler = outcome.error(function(err) {
 });
 
 //success
-fs.stat(__filename, resultHandler.result(function(result) {
+fs.stat(__filename, resultHandler.copy().result(function(result) {
 	//do stuff
 }));
 
 //success
-fs.stat(__filename, resultHandler.result(function(result) {
+fs.stat(__filename, resultHandler.copy().result(function(result) {
 	//do stuff
 })); 
 
 //this fails - error is passed to above func
-fs.stat('s'+__filename, resultHandler.result(function(result) {
+fs.stat('s'+__filename, resultHandler.copy().result(function(result) {
 	//do stuff
 })); 
 
