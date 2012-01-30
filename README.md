@@ -52,11 +52,14 @@ Or
 
 ```javascript
 var onOutcome = outcome({
-	success: function() {
+	success: function(result) {
 		console.log("SUCCESS");
 	},
-	error: function() {
+	error: function(error) {
 		console.log("ERROR");
+	},
+	callback: function(err, result) {
+		
 	}
 });
 
@@ -83,7 +86,7 @@ fs.stat('s'+__filename, outcome({
 
 Copies the current call chain. Useful for using one error handler, and many result handlers. See first example.
 
-### .done()
+### .callback()
 
 Called when on error/success. `Same as function(err, data) { }`
 
@@ -93,7 +96,7 @@ fs.stat(__filename, outcome.error(function(err) {
 	//handle error
 }).success(function(data) {
 	//handle result
-}.done(function(err, result) {
+}.callback(function(err, result) {
 	//called on fn complete
 });
 

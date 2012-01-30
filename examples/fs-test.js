@@ -7,18 +7,34 @@ var onResult = outcome.error(function(err) {
 	console.log(err);
 }).success(function(result) {
 	console.log(result)
+}).callback(function(err, result) {
+	console.log("CALLBACK")
 });
+
+
+
 
 
 
 var onResult2 = onResult.copy().success(function(result) {
 	
 	console.log("RESULT")
-}).done(function(err, result) {
-	console.log('DONE')
+});
+
+var onResult3 = outcome({
+	error: function() {
+		console.log("ERR")
+	},
+	success: function() {
+		console.log("SUCC")
+	},
+	callback: function(err, result) {
+		console.log("CB")
+	}
 })
  
 fs.stat(__filename, onResult);
 fs.stat(__filename, onResult2);
 fs.stat('s'+__filename, onResult2);
+fs.stat('s'+__filename, onResult3)
 

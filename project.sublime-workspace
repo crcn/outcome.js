@@ -8,7 +8,10 @@
 	"buffers":
 	[
 		{
+			"contents": "",
 			"file": "/tmp/subl stdin 57e8mA.txt",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -19,7 +22,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 3077,
+				"buffer_size": 2025,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +38,23 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 3240,
+				"buffer_size": 1877,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin VYLw0M.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin 877Eom.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +78,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 251,
+				"buffer_size": 247,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +86,7 @@
 			"file": "examples/fs-test.js",
 			"settings":
 			{
-				"buffer_size": 738,
+				"buffer_size": 463,
 				"line_ending": "Unix"
 			}
 		}
@@ -145,6 +164,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"result",
+			"ret",
+			"globalEmitter",
+			"ret =",
+			".listen",
+			"wrapResultFn",
+			"outcome.",
 			"onOutcome2",
 			"wrapResultFn",
 			"call",
@@ -236,15 +262,15 @@
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 3077,
+						"buffer_size": 2025,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								670,
-								670
+								496,
+								496
 							]
 						],
 						"settings":
@@ -253,7 +279,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 512.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -289,15 +315,15 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 3240,
+						"buffer_size": 1877,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2734,
-								2734
+								288,
+								288
 							]
 						],
 						"settings":
@@ -306,14 +332,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2508.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/tmp/subl stdin b284jE.txt",
+					"file": "/tmp/subl stdin VYLw0M.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -339,6 +365,58 @@
 				},
 				{
 					"buffer": 5,
+					"file": "/tmp/subl stdin 877Eom.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/tmp/subl stdin b284jE.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "/Users/craig/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
 					"settings":
 					{
@@ -364,25 +442,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 251,
+						"buffer_size": 247,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								188
+								156,
+								156
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -392,19 +470,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "examples/fs-test.js",
 					"settings":
 					{
-						"buffer_size": 738,
+						"buffer_size": 463,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								291,
-								189
+								173,
+								173
 							]
 						],
 						"settings":
