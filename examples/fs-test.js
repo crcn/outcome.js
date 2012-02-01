@@ -3,6 +3,9 @@ outcome = require('../'),
 EventEmitter = require('events').EventEmitter;
 
 
+
+
+
 var onResult = outcome.error(function(err) {
 	console.log(err);
 }).success(function(result) {

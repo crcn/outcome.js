@@ -19,15 +19,10 @@
 			}
 		},
 		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 2086,
-				"line_ending": "Unix"
-			}
-		},
-		{
+			"contents": "",
 			"file": "/tmp/subl stdin pREMSl.txt",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -39,6 +34,14 @@
 			"settings":
 			{
 				"buffer_size": 2136,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin H6yuTB.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -86,7 +89,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 247,
+				"buffer_size": 248,
 				"line_ending": "Unix"
 			}
 		},
@@ -123,6 +126,7 @@
 	},
 	"file_history":
 	[
+		"/Users/craig/Dropbox/Developer/Public/outcome.js/README.md",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/outcome.js/README2.md",
 		"/Users/craig/.cupboard/projects/spice.io/beans/groups.core/delegate.js",
 		"/tmp/subl stdin OQlyq7.txt",
@@ -239,7 +243,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -270,33 +274,6 @@
 				},
 				{
 					"buffer": 1,
-					"file": "README.md",
-					"settings":
-					{
-						"buffer_size": 2086,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								438,
-								438
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 195.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "/tmp/subl stdin pREMSl.txt",
 					"settings":
 					{
@@ -322,7 +299,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "lib/index.js",
 					"settings":
 					{
@@ -341,6 +318,32 @@
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/tmp/subl stdin H6yuTB.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -483,15 +486,15 @@
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 247,
+						"buffer_size": 248,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								0,
+								0
 							]
 						],
 						"settings":
@@ -524,7 +527,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
