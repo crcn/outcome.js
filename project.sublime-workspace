@@ -22,7 +22,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 2025,
+				"buffer_size": 2086,
 				"line_ending": "Unix"
 			}
 		},
@@ -38,7 +38,15 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 1877,
+				"buffer_size": 2136,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin bpCmHE.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -86,7 +94,7 @@
 			"file": "examples/fs-test.js",
 			"settings":
 			{
-				"buffer_size": 463,
+				"buffer_size": 693,
 				"line_ending": "Unix"
 			}
 		}
@@ -164,6 +172,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".done",
+			"callback",
+			"done",
 			"result",
 			"ret",
 			"globalEmitter",
@@ -262,15 +273,15 @@
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 2025,
+						"buffer_size": 2086,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								496,
-								496
+								438,
+								438
 							]
 						],
 						"settings":
@@ -279,7 +290,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 195.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -315,15 +326,15 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 1877,
+						"buffer_size": 2136,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								288,
-								288
+								746,
+								746
 							]
 						],
 						"settings":
@@ -339,7 +350,7 @@
 				},
 				{
 					"buffer": 4,
-					"file": "/tmp/subl stdin VYLw0M.txt",
+					"file": "/tmp/subl stdin bpCmHE.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -365,7 +376,7 @@
 				},
 				{
 					"buffer": 5,
-					"file": "/tmp/subl stdin 877Eom.txt",
+					"file": "/tmp/subl stdin VYLw0M.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -391,7 +402,7 @@
 				},
 				{
 					"buffer": 6,
-					"file": "/tmp/subl stdin b284jE.txt",
+					"file": "/tmp/subl stdin 877Eom.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -417,6 +428,32 @@
 				},
 				{
 					"buffer": 7,
+					"file": "/tmp/subl stdin b284jE.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "/Users/craig/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
 					"settings":
 					{
@@ -442,7 +479,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "package.json",
 					"settings":
 					{
@@ -470,19 +507,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "examples/fs-test.js",
 					"settings":
 					{
-						"buffer_size": 463,
+						"buffer_size": 693,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								173,
-								173
+								372,
+								372
 							]
 						],
 						"settings":
