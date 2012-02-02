@@ -33,7 +33,7 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 2136,
+				"buffer_size": 2147,
 				"line_ending": "Unix"
 			}
 		},
@@ -97,7 +97,15 @@
 			"file": "examples/fs-test.js",
 			"settings":
 			{
-				"buffer_size": 693,
+				"buffer_size": 696,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "examples/basic-test.js",
+			"settings":
+			{
+				"buffer_size": 305,
 				"line_ending": "Unix"
 			}
 		}
@@ -243,7 +251,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -303,15 +311,15 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 2136,
+						"buffer_size": 2147,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								746,
-								746
+								298,
+								298
 							]
 						],
 						"settings":
@@ -514,15 +522,42 @@
 					"file": "examples/fs-test.js",
 					"settings":
 					{
-						"buffer_size": 693,
+						"buffer_size": 696,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								372,
-								372
+								0,
+								696
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "examples/basic-test.js",
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								302,
+								302
 							]
 						],
 						"settings":
