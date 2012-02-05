@@ -19,7 +19,7 @@ var onResult = outcome.error(function(err) {
 
 
 
-var onResult2 = onResult.copy().success(function(result) {
+var onResult2 = onResult.success(function(result) {
 	
 	console.log("RESULT")
 });

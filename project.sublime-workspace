@@ -33,7 +33,23 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 2147,
+				"buffer_size": 2077,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin D6g4SP.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin A9h9Pf.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -311,15 +327,15 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 2147,
+						"buffer_size": 2077,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								298,
-								298
+								439,
+								367
 							]
 						],
 						"settings":
@@ -335,7 +351,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/tmp/subl stdin H6yuTB.txt",
+					"file": "/tmp/subl stdin D6g4SP.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -361,7 +377,7 @@
 				},
 				{
 					"buffer": 4,
-					"file": "/tmp/subl stdin bpCmHE.txt",
+					"file": "/tmp/subl stdin A9h9Pf.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -387,7 +403,7 @@
 				},
 				{
 					"buffer": 5,
-					"file": "/tmp/subl stdin VYLw0M.txt",
+					"file": "/tmp/subl stdin H6yuTB.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -413,7 +429,7 @@
 				},
 				{
 					"buffer": 6,
-					"file": "/tmp/subl stdin 877Eom.txt",
+					"file": "/tmp/subl stdin bpCmHE.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -439,7 +455,7 @@
 				},
 				{
 					"buffer": 7,
-					"file": "/tmp/subl stdin b284jE.txt",
+					"file": "/tmp/subl stdin VYLw0M.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -465,6 +481,58 @@
 				},
 				{
 					"buffer": 8,
+					"file": "/tmp/subl stdin 877Eom.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/tmp/subl stdin b284jE.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "/Users/craig/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
 					"settings":
 					{
@@ -490,7 +558,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "package.json",
 					"settings":
 					{
@@ -518,7 +586,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 12,
 					"file": "examples/fs-test.js",
 					"settings":
 					{
@@ -545,7 +613,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 13,
 					"file": "examples/basic-test.js",
 					"settings":
 					{

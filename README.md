@@ -24,28 +24,24 @@ fs.stat('some/file.js', function(err, data) {
 - `listeners` - success, or error
 
 ```javascript
-
-
 var resultHandler = outcome.error(function(err) {
 	console.log(err);
 });
 
 //success
-fs.stat(__filename, resultHandler.copy().success(function(data) {
+fs.stat(__filename, resultHandler.success(function(data) {
 	//do stuff
 }));
 
 //success
-fs.stat(__filename, resultHandler.copy().success(function(data) {
+fs.stat(__filename, resultHandler.success(function(data) {
 	//do stuff
 })); 
 
 //this fails - error is passed to above func
-fs.stat('s'+__filename, resultHandler.copy().success(function(data) {
+fs.stat('s'+__filename, resultHandler.success(function(data) {
 	//do stuff
 })); 
-
-
 ````
 
 Or

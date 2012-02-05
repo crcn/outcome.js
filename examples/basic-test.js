@@ -21,3 +21,4 @@ var onResult2 = outcome({
 
 
 onResult();
+onResult2();
