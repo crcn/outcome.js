@@ -70,7 +70,9 @@ var fs  = require('fs'),
 outcome = require('outcome');
 
 function doSomething(path, callback) {
-	
+
+	//wrap the callback around an error handler so any errors in *this* function
+	//bubble back up to the callback - I'm lazy and I don't wanna write this stuff...
 	var onResult = outcome.error(callback);
 
 	//on success, call onRealPath. Any errors caught will be sent back
