@@ -1,7 +1,7 @@
 ## Motivation:
 
 - Error handling can be very redundant.
-- I find it personally cleaner when error / success code are kept separate.
+- I find it cleaner when error / success code are kept separate.
 - It becomes an easy habit *not* to handle errors, or write code which handles errors poorly.
 
 
