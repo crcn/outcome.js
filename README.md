@@ -13,7 +13,7 @@ var fs = require('fs');
 fs.stat('some/file.js', function(err, data) {
 	
 	if(err) {
-		
+
 		//do stuff
 
 		return;
@@ -43,9 +43,9 @@ Here's another example using the traditional method of error handling:
 
 ```javascript
 
+var fs = require('fs');
+
 function doSomething(path, callback) {
-	
-	var onResult = outcome.error(callback);
 
 	//init
 	fs.realpath(path, onRealPath);
@@ -73,6 +73,10 @@ function doSomething(path, callback) {
 The outcome way:
 
 ```javascript
+
+var fs  = require('fs'),
+outcome = require('outcome');
+
 function doSomething(path, callback) {
 	
 	var onResult = outcome.error(callback);
