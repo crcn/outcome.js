@@ -13,7 +13,9 @@ var fs = require('fs');
 fs.stat('some/file.js', function(err, data) {
 	
 	if(err) {
-		//do stuff, or throw
+		
+		//do stuff
+
 		return;
 	}
 
