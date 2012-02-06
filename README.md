@@ -212,4 +212,4 @@ outcome.handle(function(response) {
 ### Note
 
 Calling `.error()`, `.success()`, `.callback()` generates a new function which copies the previous listeners. 
-Checkout [fs-test](outcome.js/examples/fs-test.js) in the [examples](outcome.js/examples) folder.
+Checkout [fs-test](outcome.js/blob/master/examples/fs-test.js) in the [examples](outcome.js/blog/master/examples) folder.
