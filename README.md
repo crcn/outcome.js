@@ -5,41 +5,7 @@
 - It becomes an easy habit *not* to handle errors, or write code which handles errors poorly.
 
 
-### Old Way
-
-```javascript
-var fs = require('fs');
-
-fs.stat('some/file.js', function(err, data) {
-	
-	if(err) {
-
-		//do stuff
-
-		return;
-	}
-
-
-	//do success stuff
-});
-```
-
-### The Outcome.js way:
-
-```javascript
-
-fs.stat('some/file.s', outcome.success(function(data) {
-	
-	//do something with the result
-
-}).error(function(err) {
-	
-	//do stuff with the error
-
-}));
-```
-
-Here's another example using the traditional method of error handling:
+The old way:
 
 ```javascript
 
@@ -62,7 +28,7 @@ function doSomething(path, callback) {
 }
 ```
 
-The outcome way:
+The outcome.js way:
 
 ```javascript
 
