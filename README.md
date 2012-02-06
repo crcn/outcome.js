@@ -26,6 +26,8 @@ function doSomething(path, callback) {
 	}
 
 }
+
+doSomething()
 ```
 
 #### The outcome.js way:
@@ -57,6 +59,12 @@ function doSomething(path, callback) {
 		callback(null, stats);
 	}
 }
+
+
+var on = 
+
+doSomething()
+
 ```
 
 ## API
@@ -141,6 +149,8 @@ fs.stat('s'+__filename, outcome.success(function() {
 });
 ```
 
+
+
 ### .callback()
 
 Called when on error/success. `Same as function(err, data) { }`
@@ -161,7 +171,7 @@ fs.stat(__filename, outcome.error(function(err) {
 
 ### .success(fn)
 
-Called on success
+Called on Success.
 
 ```javascript
 var onOutcome = outcome.success(function(data, anotherParam, andAnotherParam) {
@@ -173,7 +183,7 @@ onOutcome(null, "success!", "more data!", "more results..");
 
 ### .error(fn)
 
-Called on error
+Called on error.
 
 ```javascript
 
@@ -198,3 +208,8 @@ outcome.handle(function(response) {
 
 ```
 
+
+### Note
+
+Calling `.error()`, `.success()`, `.callback()` generates a new function which copies the previous listeners. 
+Checkout [fs-test](examples/fs-test.js) in the [examples](examples) folder.
