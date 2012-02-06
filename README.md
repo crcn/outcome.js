@@ -97,7 +97,7 @@ function doSomething(path, callback) {
 
 ### outcome(listeners)
 
-- `listeners` - object of the listeners you want to attach to the callback
+- `listeners` - object of the listeners you want to attach to outcome.
 
 ```javascript
 
@@ -121,6 +121,20 @@ var onResult = outcome({
 
 ```
 
+As shown in the example above, you can also wrap-around an existing callback:
+
+```javascript
+var onResult = outcome.error(function(error) {
+	
+}).
+success(function(result, thirdParam) {
+	
+}).
+callback(function(error, result, thirdParam) {
+	
+});
+```
+
 By default, any unhandled errors are thrown. To get around this, you'll need to listen for an `unhandledError`:
 
 ```javascript
@@ -136,13 +150,11 @@ fs.stat('s'+__filename, outcome.success( function() {
 });
 ```
 
-### .copy()
-
-Copies the current call chain. Useful for using one error handler, and many result handlers. See first example.
-
 ### .callback()
 
 Called when on error/success. `Same as function(err, data) { }`
+
+Here's a redundant example:
 
 ```javascript
 
@@ -151,8 +163,8 @@ fs.stat(__filename, outcome.error(function(err) {
 }).success(function(data) {
 	//handle result
 }.callback(function(err, result) {
-	//called on fn complete
-});
+	//called on fn complete regardless if there's an error, or success
+}));
 
 ```
 
@@ -178,7 +190,7 @@ var onOutcome = outcome.error(function(err) {
 	
 });
 
-onOutcome(new Error("ERR"));
+onOutcome(new Error("something went wrong...")); 
 ```
 
 ### .handle(fn)
