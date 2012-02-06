@@ -73,7 +73,7 @@ function doSomething(path, callback) {
 
 var on = outcome.error(function(error) {
 	//do something with error
-});
+}));
 
 doSomething('/path/to/something', on.success(function(response) {
 	//do something with result
