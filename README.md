@@ -9,6 +9,8 @@ Outcome.js is a simple library which wraps your `.callback(err, result)` functio
 - Keep error handling code separate. 
 
 
+### Basic Example
+
 Here's the traditional method of handling errors:
 
 ```javascript
