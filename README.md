@@ -227,6 +227,43 @@ outcome.handle(function(response) {
 ```
 
 
+## CoffeeScript
+
+Outcome also works nicely with coffeescript:
+
+```coffeescript
+
+outcome = require "outcome"
+
+doSomething(path, callback) ->
+	
+	on = outcome.error callback
+
+	# first get the realpath
+	fs.realpath path, on.success onRealPath
+
+	# on real path, get stats
+	onRealPath(path) ->
+		
+		fs.lstat path, on.success onStat
+
+	# on stat, finish
+	onStat(stats) -> callback null, stats
+
+
+# call do something
+doSomething '/path/to/something', outcome 
+
+	success: (statis) ->
+		# do something
+
+	error: (error) ->
+		# do something else
+
+
+```
+
+
 ### Note
 
 Calling `.error()`, `.success()`, `.callback()` generates a new function which copies the previous listeners. 
