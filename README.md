@@ -73,16 +73,16 @@ function doSomething(path, callback) {
 
 	//wrap the callback around an error handler so any errors in *this* function
 	//bubble back up to the callback - I'm lazy and I don't wanna write this stuff...
-	var onResult = outcome.error(callback);
+	var on = outcome.error(callback);
 
 	//on success, call onRealPath. Any errors caught will be sent back
 	//automatically
-	fs.realpath(path, onResult.success(onRealPath));
+	fs.realpath(path, on.success(onRealPath));
 
 	function onRealPath(path) {
 
 		//ONLY call onStat if we're successfuly grabbed the file stats
-		fs.lstat(path, onResult.success(onStat));
+		fs.lstat(path, on.success(onStat));
 	}
 
 	function onStat(stats) {
@@ -133,6 +133,30 @@ success(function(result, thirdParam) {
 callback(function(error, result, thirdParam) {
 	
 });
+```
+
+Here's how I like to do it:
+
+```javascript
+
+function myFunctionName(ops, callback) {
+	
+	//the FIRST part of the function wraps around the callback for errors
+	var on = outcome.error(callback);
+
+	//the "on" var is then passed to other async functions to handle result only. Errors are ALWAYS bubbled
+	//up to the original caller, or handled wherever it seems logical.
+
+	//example:
+	fs.stat(ops.path, on.success(onStatSuccess));
+
+	//The result handler. No error handling here! 
+	function onStatSuccess(stats) {
+		
+	}
+
+}
+
 ```
 
 By default, any unhandled errors are thrown. To get around this, you'll need to listen for an `unhandledError`:
