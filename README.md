@@ -63,7 +63,7 @@ function doSomething(path, callback) {
 
 ### outcome(listeners)
 
-- `listeners` - object of the listeners you want to attach to outcome.
+- `listeners` - Object of listeners you want to attach to outcome.
 
 ```javascript
 
@@ -105,13 +105,14 @@ Here's how I like to do it:
 
 ```javascript
 
-function myFunctionName(ops, callback) {
+function doSomething(ops, callback) {
 	
 	//the FIRST part of the function wraps around the callback for errors
 	var on = outcome.error(callback);
 
-	//the "on" var is then passed to other async functions to handle result only. Errors are ALWAYS bubbled
-	//up to the original caller, or handled wherever it seems logical.
+	//the "on" var is then passed to other async functions to handle result only. 
+	//Errors are ALWAYS bubbled up to the original caller, or handled wherever it 
+	//seems logical.
 
 	//example:
 	fs.stat(ops.path, on.success(onStatSuccess));
