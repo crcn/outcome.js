@@ -135,7 +135,7 @@ outcome.on('unhandledError', function(error) {
 
 
 //fails
-fs.stat('s'+__filename, outcome.success( function() {
+fs.stat('s'+__filename, outcome.success(function() {
 
 
 });
