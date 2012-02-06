@@ -110,7 +110,7 @@ function doSomething(ops, callback) {
 	//the FIRST part of the function wraps around the callback for errors
 	var on = outcome.error(callback);
 
-	//the "on" var is then passed to other async functions to handle results only. 
+	//the "on" var is then passed to other async functions only to handle results. 
 	//Errors are ALWAYS bubbled up to the original caller, or handled wherever it 
 	//seems logical.
 
