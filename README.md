@@ -47,25 +47,17 @@ var fs = require('fs');
 
 function doSomething(path, callback) {
 
-	//init
 	fs.realpath(path, onRealPath);
 
-
 	function onRealPath(err, path) {
-		
 		if(err) return callback(err);
-
 		fs.lstat(path, onStat);
 	}
 
 	function onStat(err, stats) {
-		
 		if(err) return callback(err);
-
-		//return the stats
 		callback(err, stats);
 	}
-
 
 }
 ```
@@ -81,19 +73,20 @@ function doSomething(path, callback) {
 	
 	var onResult = outcome.error(callback);
 
+	//on success, call onRealPath. Any errors caught will be sent back
+	//automatically
 	fs.realpath(path, onResult.success(onRealPath));
 
 	function onRealPath(path) {
 
+		//on successful call of lstat, call onStat
 		fs.lstat(path, onResult.success(onStat));
-
 	}
 
 	function onStat(stats) {
-		
-		//return the stats
-		callback(null, stats);
 
+		//no errors, so send a response back
+		callback(null, stats);
 	}
 }
 ```
