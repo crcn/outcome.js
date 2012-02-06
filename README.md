@@ -5,7 +5,7 @@
 - It becomes an easy habit *not* to handle errors, or write code which handles errors poorly.
 
 
-The old way:
+#### The old way:
 
 ```javascript
 
@@ -28,7 +28,7 @@ function doSomething(path, callback) {
 }
 ```
 
-The outcome.js way:
+#### The outcome.js way:
 
 ```javascript
 
