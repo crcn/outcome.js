@@ -81,7 +81,7 @@ function doSomething(path, callback) {
 
 	function onRealPath(path) {
 
-		//on successful call of lstat, call onStat
+		//ONLY call onStat if we're successfuly grabbed the file stats
 		fs.lstat(path, onResult.success(onStat));
 	}
 
