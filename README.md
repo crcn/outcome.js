@@ -29,7 +29,15 @@ function doSomething(path, callback) {
 
 }
 
-doSomething()
+doSomething('/path/to/something', function(err, result) {
+	
+	if(err) {
+		//do something with error
+		return;
+	}
+
+	//do something with result
+})
 ```
 
 #### The outcome.js way:
@@ -63,9 +71,13 @@ function doSomething(path, callback) {
 }
 
 
-var on = 
+var on = outcome.error(function(error) {
+	//do something with error
+});
 
-doSomething()
+doSomething('/path/to/something', on.success(function(response) {
+	//do something with result
+}));
 
 ```
 
