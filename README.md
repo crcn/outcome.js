@@ -1,10 +1,5 @@
+## DRY error handling for JavaScript
 
-
-## Motivation:
-
-- Error handling can be very redundant.
-- I find it cleaner, and easier to maintain when error / success code are kept separate.
-- It becomes an easy habit *not* to handle errors, or write code which handles errors poorly.
 
 
 #### The old way:
