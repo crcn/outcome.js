@@ -615,7 +615,7 @@ var Chain = function(listeners) {
 		//copy these listeners to a new chain
 		for(var type in listeners) {
 			
-			if(childListener[type]) continue;
+			if(childListeners[type]) continue;
 
 			childListeners[type] = listeners[type];
 
