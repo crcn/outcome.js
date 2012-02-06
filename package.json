@@ -1,6 +1,11 @@
 {
     "name": "outcome",
-    "description": "Better Result Handling",
+    "description": "DRY error handling",
+    "author":"Craig Condon",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/crcn/outcome.js.git"
+    },
     "version": "0.0.5",
     "repository": {},
     "engines": {},
