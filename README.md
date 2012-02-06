@@ -1,3 +1,9 @@
+## Motivation:
+
+- Error handling can be very redundant at some times.
+- I find it personally cleaner when I can separate error handling code from success hanlding code.
+- It becomes an easy habit *not* to handle errors, or write poor error handling code.
+
 
 ### Old Way
 
@@ -16,53 +22,103 @@ fs.stat('some/file.js', function(err, data) {
 });
 ```
 
-## Outcome API
-
-
-### .outcome(listeners)
-
-- `listeners` - success, or error
+### The Outcome.js way:
 
 ```javascript
-var resultHandler = outcome.error(function(err) {
-	console.log(err);
-});
 
-//success
-fs.stat(__filename, resultHandler.success(function(data) {
-	//do stuff
+fs.stat('some/file.s', outcome.success(function(data) {
+	
+	//do something with the result
+
+}).error(function(err) {
+	
+	//do stuff with the error
+
 }));
-
-//success
-fs.stat(__filename, resultHandler.success(function(data) {
-	//do stuff
-})); 
-
-//this fails - error is passed to above func
-fs.stat('s'+__filename, resultHandler.success(function(data) {
-	//do stuff
-})); 
-````
-
-Or
-
-```javascript
-var onOutcome = outcome({
-	success: function(result) {
-		console.log("SUCCESS");
-	},
-	error: function(error) {
-		console.log("ERROR");
-	},
-	callback: function(err, result) {
-		
-	}
-});
-
-fs.stat(__filename, onOutcome);
-
 ```
 
+Here's another example using the traditional method of error handling:
+
+```javascript
+
+function doSomething(path, callback) {
+	
+	var onResult = outcome.error(callback);
+
+	//init
+	fs.realpath(path, onRealPath);
+
+
+	function onRealPath(err, path) {
+		
+		if(err) return callback(err);
+
+		fs.lstat(path, onStat);
+	}
+
+	function onStat(err, stats) {
+		
+		if(err) return callback(err);
+
+		//return the stats
+		callback(err, stats);
+	}
+
+
+}
+```
+
+The outcome way:
+
+```javascript
+function doSomething(path, callback) {
+	
+	var onResult = outcome.error(callback);
+
+	fs.realpath(path, onResult.success(onRealPath));
+
+	function onRealPath(path) {
+
+		fs.lstat(path, onResult.success(onStat));
+
+	}
+
+	function onStat(stats) {
+		
+		//return the stats
+		callback(null, stats);
+
+	}
+}
+```
+
+## API
+
+### outcome(listeners)
+
+- `listeners` - object of the listeners you want to attach to the callback
+
+```javascript
+
+var onResult = outcome({
+	
+	//called when an error is caught
+	error: function(error) {
+		
+	},
+
+	//called when an error is NOT present
+	success: function(result, thirdParam) {
+		
+	},
+
+	//called back when an error, or result is present
+	callback: function(err, result, thirdParam) {
+		
+	}
+})
+
+```
 
 By default, any unhandled errors are thrown. To get around this, you'll need to listen for an `unhandledError`:
 
@@ -73,9 +129,10 @@ outcome.on('unhandledError', function(error) {
 
 
 //fails
-fs.stat('s'+__filename, outcome({
-	success: function(){}
-}));
+fs.stat('s'+__filename, outcome.success( function() {
+
+
+});
 ```
 
 ### .copy()
