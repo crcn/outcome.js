@@ -6,7 +6,7 @@ Outcome.js is a simple library which wraps your `.callback(err, result)` functio
 
 - Write less code for handling errors.
 - Easier to maintain.
-- Keep error handling code separate.
+- Keep error handling code separate. 
 
 
 Here's the traditional method of handling errors:
