@@ -5,7 +5,6 @@
     "repository": {},
     "engines": {},
     "dependencies": {
-        "underscore": "*"
     },
     "devDependencies": {},
     "main": "./lib/index.js"
