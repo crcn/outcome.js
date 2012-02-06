@@ -173,11 +173,11 @@ fs.stat(__filename, outcome.error(function(err) {
 Called on success
 
 ```javascript
-var onOutcome = outcome.success(function(data) {
-	
+var onOutcome = outcome.success(function(data, anotherParam, andAnotherParam) {
+	//handle success data
 });
 
-onOutcome(null, "success!");
+onOutcome(null, "success!", "more data!", "more results..");
 ```
 
 ### .error(fn)
