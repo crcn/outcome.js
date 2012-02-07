@@ -4,7 +4,7 @@ Outcome.js is a simple flow-control library which wraps your `.callback(err, res
 
 ### Motiviation
 
-- Supoer simple flow-control.
+- Super simple flow-control without the extra frill. 
 - Write less code for handling errors.
 - Easier to maintain.
 - Keep error handling code separate. 
