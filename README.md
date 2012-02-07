@@ -206,9 +206,7 @@ outcome.handle(function(response) {
 ```
 
 
-## CoffeeScript
-
-Outcome also works nicely with coffeescript:
+## CoffeeScript Example
 
 ```coffeescript
 
