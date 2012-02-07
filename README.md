@@ -220,9 +220,7 @@ doSomething(path, callback) ->
 	fs.realpath path, on.success onRealPath
 
 	# on real path, get stats
-	onRealPath(path) ->
-		
-		fs.lstat path, on.success onStat
+	onRealPath(path) -> fs.lstat path, on.success onStat
 
 	# on stat, finish
 	onStat(stats) -> callback null, stats
