@@ -1,9 +1,10 @@
-## DRY error handling for JavaScript
 
-Outcome.js is a simple library which wraps your `.callback(err, result)` functions. 
+
+Outcome.js is a simple flow-control library which wraps your `.callback(err, result)` functions. 
 
 ### Motiviation
 
+- Supoer simple flow-control.
 - Write less code for handling errors.
 - Easier to maintain.
 - Keep error handling code separate. 
