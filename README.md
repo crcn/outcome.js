@@ -66,7 +66,7 @@ function doSomething(path, callback) {
 
 	function onRealPath(path) {
 
-		//ONLY call onStat if we're successfuly grabbed the file stats
+		//ONLY call onStat if we've successfuly grabbed the file stats
 		fs.lstat(path, on.success(onStat));
 	}
 
