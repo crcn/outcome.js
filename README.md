@@ -9,6 +9,7 @@ Outcome.js is a simple flow-control library which wraps your `.callback(err, res
 - Keep error handling code separate. 
 
 
+
 ### Basic Example
 
 Here's the traditional method of handling errors:

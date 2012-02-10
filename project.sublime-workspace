@@ -38,6 +38,22 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin cZgAdw.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin LFxbDT.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/tmp/subl stdin Ww2oPb.txt",
 			"settings":
 			{
@@ -152,7 +168,23 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 4166,
+				"buffer_size": 4276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin HOWgA6.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin 002d3j.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -160,7 +192,7 @@
 			"file": "outcome.js",
 			"settings":
 			{
-				"buffer_size": 16839,
+				"buffer_size": 16840,
 				"line_ending": "Unix"
 			}
 		}
@@ -239,6 +271,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Motiv",
 			"self",
 			"parent",
 			"onResult",
@@ -309,7 +342,7 @@
 	"groups":
 	[
 		{
-			"selected": 17,
+			"selected": 19,
 			"sheets":
 			[
 				{
@@ -386,14 +419,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 948.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/tmp/subl stdin Ww2oPb.txt",
+					"file": "/tmp/subl stdin cZgAdw.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -419,7 +452,7 @@
 				},
 				{
 					"buffer": 4,
-					"file": "/tmp/subl stdin D6g4SP.txt",
+					"file": "/tmp/subl stdin LFxbDT.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -445,7 +478,7 @@
 				},
 				{
 					"buffer": 5,
-					"file": "/tmp/subl stdin A9h9Pf.txt",
+					"file": "/tmp/subl stdin Ww2oPb.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -471,7 +504,7 @@
 				},
 				{
 					"buffer": 6,
-					"file": "/tmp/subl stdin H6yuTB.txt",
+					"file": "/tmp/subl stdin D6g4SP.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -497,7 +530,7 @@
 				},
 				{
 					"buffer": 7,
-					"file": "/tmp/subl stdin bpCmHE.txt",
+					"file": "/tmp/subl stdin A9h9Pf.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -523,7 +556,7 @@
 				},
 				{
 					"buffer": 8,
-					"file": "/tmp/subl stdin VYLw0M.txt",
+					"file": "/tmp/subl stdin H6yuTB.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -549,7 +582,7 @@
 				},
 				{
 					"buffer": 9,
-					"file": "/tmp/subl stdin 877Eom.txt",
+					"file": "/tmp/subl stdin bpCmHE.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -575,7 +608,7 @@
 				},
 				{
 					"buffer": 10,
-					"file": "/tmp/subl stdin b284jE.txt",
+					"file": "/tmp/subl stdin VYLw0M.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -601,6 +634,58 @@
 				},
 				{
 					"buffer": 11,
+					"file": "/tmp/subl stdin 877Eom.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/tmp/subl stdin b284jE.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
 					"file": "/Users/craig/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
 					"settings":
 					{
@@ -626,7 +711,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 14,
 					"file": "package.json",
 					"settings":
 					{
@@ -654,7 +739,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 15,
 					"file": "examples/fs-test.js",
 					"settings":
 					{
@@ -681,7 +766,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 16,
 					"file": "examples/basic-test.js",
 					"settings":
 					{
@@ -708,7 +793,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 17,
 					"settings":
 					{
 						"buffer_size": 0,
@@ -734,7 +819,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 18,
 					"file": "examples/test.html",
 					"settings":
 					{
@@ -761,19 +846,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 19,
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 4166,
+						"buffer_size": 4276,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								187,
-								187
+								1083,
+								1096
 							]
 						],
 						"settings":
@@ -782,25 +867,77 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 330.0,
+						"translation.y": 976.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "outcome.js",
+					"buffer": 20,
+					"file": "/tmp/subl stdin HOWgA6.txt",
 					"settings":
 					{
-						"buffer_size": 16839,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16141,
-								16154
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/tmp/subl stdin 002d3j.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "outcome.js",
+					"settings":
+					{
+						"buffer_size": 16840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
