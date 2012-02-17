@@ -150,6 +150,14 @@
 			}
 		},
 		{
+			"file": "examples/test3.js",
+			"settings":
+			{
+				"buffer_size": 722,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"settings":
 			{
 				"buffer_size": 0,
@@ -168,7 +176,23 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 4276,
+				"buffer_size": 4277,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin fcarB4.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin zZHbVh.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -271,6 +295,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".error",
 			"Motiv",
 			"self",
 			"parent",
@@ -342,7 +367,7 @@
 	"groups":
 	[
 		{
-			"selected": 19,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -409,8 +434,8 @@
 						"selection":
 						[
 							[
-								1589,
-								1589
+								1021,
+								1027
 							]
 						],
 						"settings":
@@ -419,7 +444,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 721.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -777,8 +802,8 @@
 						"selection":
 						[
 							[
-								315,
-								315
+								108,
+								108
 							]
 						],
 						"settings":
@@ -794,6 +819,33 @@
 				},
 				{
 					"buffer": 17,
+					"file": "examples/test3.js",
+					"settings":
+					{
+						"buffer_size": 722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
 					"settings":
 					{
 						"buffer_size": 0,
@@ -819,7 +871,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "examples/test.html",
 					"settings":
 					{
@@ -846,51 +898,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 4276,
+						"buffer_size": 4277,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1083,
-								1096
+								218,
+								218
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Markdown/Markdown.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 976.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "/tmp/subl stdin HOWgA6.txt",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -900,7 +926,7 @@
 				},
 				{
 					"buffer": 21,
-					"file": "/tmp/subl stdin 002d3j.txt",
+					"file": "/tmp/subl stdin fcarB4.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -926,6 +952,84 @@
 				},
 				{
 					"buffer": 22,
+					"file": "/tmp/subl stdin zZHbVh.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/tmp/subl stdin HOWgA6.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/tmp/subl stdin 002d3j.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 25,
 					"file": "outcome.js",
 					"settings":
 					{
@@ -947,7 +1051,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8731.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
