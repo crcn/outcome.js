@@ -38,6 +38,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin SVU98k.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/tmp/subl stdin cZgAdw.txt",
 			"settings":
 			{
@@ -129,7 +137,15 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 352,
+				"buffer_size": 316,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin 9nheXs.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -217,6 +233,14 @@
 			"settings":
 			{
 				"buffer_size": 16840,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".cupboard",
+			"settings":
+			{
+				"buffer_size": 286,
 				"line_ending": "Unix"
 			}
 		}
@@ -367,7 +391,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 28,
 			"sheets":
 			[
 				{
@@ -451,7 +475,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/tmp/subl stdin cZgAdw.txt",
+					"file": "/tmp/subl stdin SVU98k.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -477,7 +501,7 @@
 				},
 				{
 					"buffer": 4,
-					"file": "/tmp/subl stdin LFxbDT.txt",
+					"file": "/tmp/subl stdin cZgAdw.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -503,7 +527,7 @@
 				},
 				{
 					"buffer": 5,
-					"file": "/tmp/subl stdin Ww2oPb.txt",
+					"file": "/tmp/subl stdin LFxbDT.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -529,7 +553,7 @@
 				},
 				{
 					"buffer": 6,
-					"file": "/tmp/subl stdin D6g4SP.txt",
+					"file": "/tmp/subl stdin Ww2oPb.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -555,7 +579,7 @@
 				},
 				{
 					"buffer": 7,
-					"file": "/tmp/subl stdin A9h9Pf.txt",
+					"file": "/tmp/subl stdin D6g4SP.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -581,7 +605,7 @@
 				},
 				{
 					"buffer": 8,
-					"file": "/tmp/subl stdin H6yuTB.txt",
+					"file": "/tmp/subl stdin A9h9Pf.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -607,7 +631,7 @@
 				},
 				{
 					"buffer": 9,
-					"file": "/tmp/subl stdin bpCmHE.txt",
+					"file": "/tmp/subl stdin H6yuTB.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -633,7 +657,7 @@
 				},
 				{
 					"buffer": 10,
-					"file": "/tmp/subl stdin VYLw0M.txt",
+					"file": "/tmp/subl stdin bpCmHE.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -659,7 +683,7 @@
 				},
 				{
 					"buffer": 11,
-					"file": "/tmp/subl stdin 877Eom.txt",
+					"file": "/tmp/subl stdin VYLw0M.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -685,7 +709,7 @@
 				},
 				{
 					"buffer": 12,
-					"file": "/tmp/subl stdin b284jE.txt",
+					"file": "/tmp/subl stdin 877Eom.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -711,6 +735,32 @@
 				},
 				{
 					"buffer": 13,
+					"file": "/tmp/subl stdin b284jE.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
 					"file": "/Users/craig/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
 					"settings":
 					{
@@ -736,25 +786,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 352,
+						"buffer_size": 316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								188
+								168,
+								168
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -764,7 +814,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
+					"file": "/tmp/subl stdin 9nheXs.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
 					"file": "examples/fs-test.js",
 					"settings":
 					{
@@ -791,7 +867,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 18,
 					"file": "examples/basic-test.js",
 					"settings":
 					{
@@ -818,7 +894,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 19,
 					"file": "examples/test3.js",
 					"settings":
 					{
@@ -845,7 +921,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 20,
 					"settings":
 					{
 						"buffer_size": 0,
@@ -871,7 +947,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 21,
 					"file": "examples/test.html",
 					"settings":
 					{
@@ -898,7 +974,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 22,
 					"file": "README.md",
 					"settings":
 					{
@@ -925,7 +1001,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 23,
 					"file": "/tmp/subl stdin fcarB4.txt",
 					"settings":
 					{
@@ -951,7 +1027,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 24,
 					"file": "/tmp/subl stdin zZHbVh.txt",
 					"settings":
 					{
@@ -977,7 +1053,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 25,
 					"file": "/tmp/subl stdin HOWgA6.txt",
 					"settings":
 					{
@@ -1003,7 +1079,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 24,
+					"buffer": 26,
 					"file": "/tmp/subl stdin 002d3j.txt",
 					"settings":
 					{
@@ -1029,7 +1105,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 27,
 					"file": "outcome.js",
 					"settings":
 					{
@@ -1049,6 +1125,32 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": ".cupboard",
+					"settings":
+					{
+						"buffer_size": 286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
