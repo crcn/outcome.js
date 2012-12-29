@@ -1,7 +1,3 @@
 [commands]
 proj = subl .
 
-
-[ignore]
-outcome.min.js
-project.sublime-\w+
