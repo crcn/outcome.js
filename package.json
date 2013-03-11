@@ -7,9 +7,15 @@
     "url": "git://github.com/crcn/outcome.js.git"
   },
   "repository": {},
-  "version": "0.0.12",
+  "version": "0.0.13",
   "engines": {},
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "expect.js": "0.2.x",
+    "mocha":"1.8.x"
+  },
+  "scripts": {
+    "test": "mocha --reporter min"
+  },
   "main": "./lib/index.js"
 }
