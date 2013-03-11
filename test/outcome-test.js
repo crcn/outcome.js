@@ -6,7 +6,8 @@ describe("outcome", function() {
   var em = new EventEmitter();
 
   it("can re-route an error", function(done) {
-    outcome.e(function() {
+    outcome.e(function(err) {
+      expect(err).not.to.be(undefined);
       done()
     }).s(function() {
       done(new Error("didn't re-route properly"));
@@ -15,6 +16,7 @@ describe("outcome", function() {
 
   it("can throw a global error if failed", function(done) {
     outcome.once("unhandledError", function(err) {
+      expect(err).not.to.be(undefined);
       done();
     });
 
@@ -25,6 +27,7 @@ describe("outcome", function() {
 
   it("can re-route an error to an event emitter", function(done) {
     em.once("error", function(err) {
+      expect(err).not.to.be(undefined);
       done();
     });
 
@@ -40,6 +43,7 @@ describe("outcome", function() {
 
     var o = outcome.e(em);
     em.on("error", cb = function(err) {
+      expect(err).not.to.be(undefined);
       calls++;
     });
 
@@ -70,5 +74,15 @@ describe("outcome", function() {
     }).s(function() {
       throw new Error("uh oh!");
     })();
+  });
+
+
+  it("can pass values into the success callback", function(done) {
+    outcome.e(done).s(function(v, v1, v2) {
+      expect(v).not.to.be(undefined);
+      expect(v1).not.to.be(undefined);
+      expect(v2).not.to.be(undefined);
+      done();
+    })(null, 1, 2, 3);
   });
 });
