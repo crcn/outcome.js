@@ -61,4 +61,14 @@ describe("outcome", function() {
 
     em.removeListener("error", cb);
   });
+
+
+  it("can properly re-route a thrown exception", function(done) {
+    outcome.e(function(e) {
+      expect(e.message).to.be("uh oh!");
+      done();
+    }).s(function() {
+      throw new Error("uh oh!");
+    })();
+  });
 });
